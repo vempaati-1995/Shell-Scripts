@@ -1,2 +1,3 @@
 # Shell-Scripts
-Shell scripting files
+All Shell scripting files.
+
