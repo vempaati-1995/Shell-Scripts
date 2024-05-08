@@ -13,6 +13,7 @@ if [ "$raw_user" ]; then
             else
                 echo "Given $user is not available, has to be created"
                 new_user=$(useradd $user)
+                usermod -aG sudo $user
                 special=$(echo '!@#$%^&*()_' | fold -1 | shuf | head -1)
                 password=$(echo "India@$RANDOM$special")
                 echo "$password"
